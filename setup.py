@@ -14,7 +14,8 @@ setup(
     long_description=long_description,
     python_requires='>=3.6',
     long_description_content_type="text/markdown",
-    packages= find_packages(include=['test_package', 'test_package.*'],exclude = ['docs', 'tests*','__pycache__/']),
+    #packages= find_packages(include=['test_package', 'test_package.*'],exclude = ['docs', 'tests*','__pycache__/']),
+    packages= find_packages(exclude = ['docs', 'tests*','__pycache__/']),
     url="https://github.com/Mishuni/Pip_Package_Practice.git",
     install_requires=[
         ''
