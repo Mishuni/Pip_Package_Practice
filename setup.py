@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 username = "username"
 setup(
     name='test_%s'%username, 
-    version='0.1.0',
+    version='0.1.1',
     author='test1234',
     author_email='test1234@email.re.kr',
     description='test package',
