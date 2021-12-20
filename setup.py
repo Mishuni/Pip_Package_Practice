@@ -6,11 +6,11 @@ with open("README.md", "r") as fh:
 
 username = "username"
 setup(
-    name='test_%s'%username, 
-    version='0.1.1',
+    name='test_%s'%username, # Required
+    version='0.1.2', # Required
+    description='test package',# Required
     author='test1234',
     author_email='test1234@email.re.kr',
-    description='test package',
     long_description=long_description,
     python_requires='>=3.6',
     long_description_content_type="text/markdown",
@@ -26,4 +26,10 @@ setup(
             'tpm=test_package.__main__:main',
         ],
     },
+    license='MIT',
+    keywords = "test sample",
+    classifiers=["Programming Language :: Python :: 3.5",
+                 "Programming Language :: Python :: 3.6",
+                 "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"],
+    
 )
