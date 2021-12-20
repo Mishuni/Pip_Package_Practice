@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 username = "username"
 setup(
     name='test_%s'%username, # Required
-    version='0.1.2', # Required
+    version='2.0.3', # Required
     description='test package',# Required
     author='test1234',
     author_email='test1234@email.re.kr',
@@ -26,10 +26,9 @@ setup(
             'tpm=test_package.__main__:main',
         ],
     },
-    license='MIT',
+    license='Apache',
     keywords = "test sample",
     classifiers=["Programming Language :: Python :: 3.5",
                  "Programming Language :: Python :: 3.6",
-                 "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"],
-    
+                 "License :: OSI Approved :: Apache Software License"],
 )
